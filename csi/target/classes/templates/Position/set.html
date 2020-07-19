@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>SetPosition</title>
+</head>
+<body>
+<h1>SetPosition</h1>
+<a href="#" th:href="@{/position}">跳转到角色管理首页</a><br><br>
+<div class="ui success message" th:unless="${#strings.isEmpty(msg)}">
+    <i class="close icon"></i>
+    <div class="header">提示：</div>
+    <h3 th:text="${msg}">恭喜，操作成功！</h3>
+</div>
+<h3>员工信息</h3>
+<table style="border-collapse:separate; border-spacing:20px 10px;">
+    <tr>
+        <th>ID</th>
+        <th>登录名</th>
+        <th>登录密码</th>
+        <th>部门编号</th>
+        <th>员工名</th>
+        <th>性别</th>
+        <th>爱好</th>
+        <th>年龄</th>
+        <th>角色(点击删除)</th>
+        <!--        <th>修改</th>-->
+        <!--        <th>删除</th>-->
+    <tr>
+        <td th:text="${employee.Employee_id}">ID</td>
+        <td th:text="${employee.employeeloginname}">登录名</td>
+        <td th:text="${employee.employeepassword}">密码</td>
+        <td th:text="${employee.dept_num}">部门编号</td>
+        <td th:text="${employee.employee_name}">员工名</td>
+        <td th:text="${employee.sex}">性别</td>
+        <th th:text="${employee.hobby}">爱好</th>
+        <th th:text="${employee.age}">年龄</th>
+        <th>
+            <div th:each="position : ${employee.positionList}">
+                <a href="#"  th:text="${position.position_name}" th:href="@{/position/list/delete2(position_id=${position.position_id},Employee_id=${employee.Employee_id})}"
+                   onclick="return confirm('确定要删除这个角色吗？三思啊! 删了可就没了！')">删除</a>
+            </div>
+        </th>
+</table>
+<br><br><br>
+<form method="post" action="#" th:action="@{/position/set/a}">
+    <h3>新增角色</h3>
+    <input type="text" th:value="${employee.getEmployee_id()}" name="Employee_id" style="display:none"/>
+    <label th:each="position : ${positionList}">
+        <input th:value="${position.getPosition_id()}" type="radio" name="position_id"><a th:text="${position.position_name}"></a>&nbsp;&nbsp;
+    </label>
+    <input type="submit">
+</form>
+<br><br>
+
+</body>
+</html>

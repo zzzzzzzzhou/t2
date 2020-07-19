@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>add</title>
+</head>
+<body>
+<h1>add</h1>
+<form action="#" method="post" th:action="@{/dept/add/a}">
+    部门名称：<input type="text" name="dept_name" placeholder="部门名称"><br><br>
+    领导ID：<input type="text" name="leader_id" placeholder="部门领导"><br><br>
+   部门职责 <input type="text" name="duty" placeholder="部门职责"><br><br>
+    <input type="submit" value="提交">
+</form>
+
+<div class="ui success message" th:unless="${#strings.isEmpty(msg)}">
+    <i class="close icon"></i>
+    <div class="header">提示：</div>
+    <p th:text="${msg}">恭喜，操作成功！</p>
+</div>
+
+
+</body>
+</html>

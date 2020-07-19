@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.yznu.csi.dao.ManageEmployeeDao">
+
+    <select id="findALLEmployee" resultType="Employee">
+        select * from employee
+    </select>
+
+    <delete id="deleteEmployee" parameterType="Employee">
+        delete from employee where Employee_id= #{Employee_id}
+    </delete>
+
+    <insert id="addEmployee" parameterType="Employee">
+        insert into employee (employeeloginname,employeepassword,dept_num,employee_name,sex,hobby,age)
+        values (#{employeeloginname},#{employeepassword},#{dept_num},#{employee_name},#{sex},#{hobby},#{age})
+    </insert>
+
+    <update id="updateEmlpoyee" parameterType="Employee">
+        update employee set employeeloginname= #{employeeloginname} ,
+        employeepassword=#{employeepassword},    dept_num=#{dept_num},   employee_name=#{employee_name},
+        sex=#{sex},    hobby=#{hobby},  age=#{age}
+        where Employee_id= #{Employee_id}
+    </update>
+
+    <select id="getInfo"  resultType="Employee">
+        select * from employee where Employee_id= #{Employee_id}
+    </select>
+
+    <select id="findEmployee" parameterType="Employee" resultType="Employee">
+        select * from employee where 1=1
+
+        <if test="dept_num !=0">
+            and dept_num=#{dept_num}
+        </if>
+        <if test="employee_name !=null">
+            and employee_name=#{employee_name}
+        </if>
+<!--        <if test="dept_num ==null and employee_name ==null">-->
+<!--            and 1=0-->
+<!--        </if>-->
+    </select>
+    <select id="findEmployee2" parameterType="Employee" resultType="Employee">
+        select * from employee where 1=1
+
+        <if test="dept_num !=0">
+            and dept_num=#{dept_num}
+        </if>
+<!--        <if test="employee_name !=null">-->
+<!--            and employee_name=#{employee_name}-->
+<!--        </if>-->
+        <!--        <if test="dept_num ==null and employee_name ==null">-->
+        <!--            and 1=0-->
+        <!--        </if>-->
+    </select>
+</mapper>

@@ -1,0 +1,794 @@
+2020-07-17 00:11:50.046  INFO 16952 --- [main] cn.yznu.csi.CsiApplication               : Starting CsiApplication on LAPTOP-DDQ3HK83 with PID 16952 (E:\桌面\csi\target\classes started by 44129 in E:\桌面\csi)
+2020-07-17 00:11:50.062  INFO 16952 --- [main] cn.yznu.csi.CsiApplication               : The following profiles are active: dev
+2020-07-17 00:11:50.853  INFO 16952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-07-17 00:11:50.858  INFO 16952 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-17 00:11:50.858  INFO 16952 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-17 00:11:50.936  INFO 16952 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-17 00:11:50.937  INFO 16952 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 813 ms
+2020-07-17 00:11:51.347  INFO 16952 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-17 00:11:51.590  INFO 16952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-07-17 00:11:51.592  INFO 16952 --- [main] cn.yznu.csi.CsiApplication               : Started CsiApplication in 1.97 seconds (JVM running for 2.856)
+2020-07-17 00:12:03.205  INFO 16952 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-17 00:12:03.205  INFO 16952 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-17 00:12:03.211  INFO 16952 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-07-17 00:12:03.227  INFO 16952 --- [http-nio-8081-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 00:12:03.228  INFO 16952 --- [http-nio-8081-exec-1] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://localhost:8081/dept', ip='0:0:0:0:0:0:0:1', classMethod='cn.yznu.csi.controller.DeptController.index2', args=[{}]}
+2020-07-17 00:12:03.242  INFO 16952 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-17 00:12:03.331  INFO 16952 --- [http-nio-8081-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-17 00:12:03.355  INFO 16952 --- [http-nio-8081-exec-1] cn.yznu.csi.aspect.LogAspect             : Result : dept/list
+2020-07-17 00:12:03.356  INFO 16952 --- [http-nio-8081-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 00:14:19.293  INFO 20496 --- [main] cn.yznu.csi.CsiApplication               : Starting CsiApplication on LAPTOP-DDQ3HK83 with PID 20496 (E:\桌面\csi\target\classes started by 44129 in E:\桌面\csi)
+2020-07-17 00:14:19.296  INFO 20496 --- [main] cn.yznu.csi.CsiApplication               : The following profiles are active: dev
+2020-07-17 00:14:20.103  INFO 20496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-17 00:14:20.108  INFO 20496 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-17 00:14:20.109  INFO 20496 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-17 00:14:20.179  INFO 20496 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-17 00:14:20.180  INFO 20496 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 815 ms
+2020-07-17 00:14:20.585  INFO 20496 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-17 00:14:20.852  INFO 20496 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-17 00:14:20.854  INFO 20496 --- [main] cn.yznu.csi.CsiApplication               : Started CsiApplication in 2.009 seconds (JVM running for 2.844)
+2020-07-17 00:14:25.735  INFO 20496 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-17 00:14:25.735  INFO 20496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-17 00:14:25.741  INFO 20496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-07-17 00:14:25.758  INFO 20496 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 00:14:25.758  INFO 20496 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://localhost:8080/dept', ip='0:0:0:0:0:0:0:1', classMethod='cn.yznu.csi.controller.DeptController.index2', args=[{}]}
+2020-07-17 00:14:25.774  INFO 20496 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-17 00:14:25.855  INFO 20496 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-17 00:14:25.881  INFO 20496 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : Result : dept/list
+2020-07-17 00:14:25.881  INFO 20496 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 00:14:28.363  INFO 20496 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 00:14:28.364  INFO 20496 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://localhost:8080/dept', ip='0:0:0:0:0:0:0:1', classMethod='cn.yznu.csi.controller.DeptController.index2', args=[{}]}
+2020-07-17 00:14:28.368  INFO 20496 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : Result : dept/list
+2020-07-17 00:14:28.368  INFO 20496 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 00:14:38.705  INFO 19108 --- [main] cn.yznu.csi.CsiApplication               : Starting CsiApplication on LAPTOP-DDQ3HK83 with PID 19108 (E:\桌面\csi\target\classes started by 44129 in E:\桌面\csi)
+2020-07-17 00:14:38.709  INFO 19108 --- [main] cn.yznu.csi.CsiApplication               : The following profiles are active: dev
+2020-07-17 00:14:39.565  INFO 19108 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-07-17 00:14:39.571  INFO 19108 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-17 00:14:39.572  INFO 19108 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-17 00:14:39.643  INFO 19108 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-17 00:14:39.643  INFO 19108 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 861 ms
+2020-07-17 00:14:40.040  INFO 19108 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-17 00:14:40.282  INFO 19108 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-07-17 00:14:40.284  INFO 19108 --- [main] cn.yznu.csi.CsiApplication               : Started CsiApplication in 1.986 seconds (JVM running for 2.845)
+2020-07-17 00:23:01.628  INFO 6040 --- [main] cn.yznu.csi.CsiApplication               : Starting CsiApplication on LAPTOP-DDQ3HK83 with PID 6040 (E:\桌面\csi\target\classes started by 44129 in E:\桌面\csi)
+2020-07-17 00:23:01.630  INFO 6040 --- [main] cn.yznu.csi.CsiApplication               : The following profiles are active: dev
+2020-07-17 00:23:02.431  INFO 6040 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-07-17 00:23:02.436  INFO 6040 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-17 00:23:02.436  INFO 6040 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-17 00:23:02.506  INFO 6040 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-17 00:23:02.506  INFO 6040 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 799 ms
+2020-07-17 00:23:02.905  INFO 6040 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-17 00:23:03.159  INFO 6040 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-07-17 00:23:03.161  INFO 6040 --- [main] cn.yznu.csi.CsiApplication               : Started CsiApplication in 2.007 seconds (JVM running for 2.919)
+2020-07-17 00:23:06.238  INFO 6040 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-17 00:23:06.238  INFO 6040 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-17 00:23:06.246  INFO 6040 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-07-17 00:23:06.264  INFO 6040 --- [http-nio-8081-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 00:23:06.265  INFO 6040 --- [http-nio-8081-exec-1] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://localhost:8081/dept/add', ip='0:0:0:0:0:0:0:1', classMethod='cn.yznu.csi.controller.DeptController.add', args=[]}
+2020-07-17 00:23:06.268  INFO 6040 --- [http-nio-8081-exec-1] cn.yznu.csi.aspect.LogAspect             : Result : /dept/add
+2020-07-17 00:23:06.269  INFO 6040 --- [http-nio-8081-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 00:57:18.450  INFO 7964 --- [main] cn.yznu.csi.CsiApplication               : Starting CsiApplication on LAPTOP-DDQ3HK83 with PID 7964 (E:\桌面\csi\target\classes started by 44129 in E:\桌面\csi)
+2020-07-17 00:57:18.453  INFO 7964 --- [main] cn.yznu.csi.CsiApplication               : The following profiles are active: dev
+2020-07-17 00:57:19.267  INFO 7964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-07-17 00:57:19.272  INFO 7964 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-17 00:57:19.272  INFO 7964 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-17 00:57:19.372  INFO 7964 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-17 00:57:19.372  INFO 7964 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 837 ms
+2020-07-17 00:57:19.879  INFO 7964 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-17 00:57:20.150  INFO 7964 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-07-17 00:57:20.152  INFO 7964 --- [main] cn.yznu.csi.CsiApplication               : Started CsiApplication in 2.157 seconds (JVM running for 3.048)
+2020-07-17 00:57:30.469  INFO 7964 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-17 00:57:30.470  INFO 7964 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-17 00:57:30.475  INFO 7964 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-07-17 00:57:30.494  INFO 7964 --- [http-nio-8081-exec-2] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 00:57:30.494  INFO 7964 --- [http-nio-8081-exec-2] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://localhost:8081/', ip='0:0:0:0:0:0:0:1', classMethod='cn.yznu.csi.controller.testController.test', args=[{}]}
+2020-07-17 00:57:30.498  INFO 7964 --- [http-nio-8081-exec-2] cn.yznu.csi.aspect.LogAspect             : Result : test
+2020-07-17 00:57:30.498  INFO 7964 --- [http-nio-8081-exec-2] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 00:57:35.861  INFO 7964 --- [http-nio-8081-exec-5] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 00:57:35.862  INFO 7964 --- [http-nio-8081-exec-5] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://localhost:8081/ManageEmployee', ip='0:0:0:0:0:0:0:1', classMethod='cn.yznu.csi.controller.ManageEmployeeController.index', args=[{}]}
+2020-07-17 00:57:35.875  INFO 7964 --- [http-nio-8081-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-17 00:57:35.960  INFO 7964 --- [http-nio-8081-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-17 00:57:35.987  INFO 7964 --- [http-nio-8081-exec-5] cn.yznu.csi.aspect.LogAspect             : Result : /ManageEmployee/list
+2020-07-17 00:57:35.987  INFO 7964 --- [http-nio-8081-exec-5] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 00:57:43.332  INFO 7964 --- [http-nio-8081-exec-4] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 00:57:43.332  INFO 7964 --- [http-nio-8081-exec-4] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://localhost:8081/ManageEmployee/add', ip='0:0:0:0:0:0:0:1', classMethod='cn.yznu.csi.controller.ManageEmployeeController.add', args=[]}
+2020-07-17 00:57:43.332  INFO 7964 --- [http-nio-8081-exec-4] cn.yznu.csi.aspect.LogAspect             : Result : /ManageEmployee/add
+2020-07-17 00:57:43.332  INFO 7964 --- [http-nio-8081-exec-4] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 00:57:49.462  INFO 7964 --- [http-nio-8081-exec-3] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 00:57:49.462  INFO 7964 --- [http-nio-8081-exec-3] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://localhost:8081/dept', ip='0:0:0:0:0:0:0:1', classMethod='cn.yznu.csi.controller.DeptController.index2', args=[{}]}
+2020-07-17 00:57:49.468  INFO 7964 --- [http-nio-8081-exec-3] cn.yznu.csi.aspect.LogAspect             : Result : dept/list
+2020-07-17 00:57:49.469  INFO 7964 --- [http-nio-8081-exec-3] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 01:10:01.123  INFO 6244 --- [main] cn.yznu.csi.CsiApplication               : Starting CsiApplication on LAPTOP-DDQ3HK83 with PID 6244 (E:\桌面\csi\target\classes started by 44129 in E:\桌面\csi)
+2020-07-17 01:10:01.125  INFO 6244 --- [main] cn.yznu.csi.CsiApplication               : The following profiles are active: dev
+2020-07-17 01:10:01.922  INFO 6244 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2020-07-17 01:10:01.928  INFO 6244 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-17 01:10:01.928  INFO 6244 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-17 01:10:01.996  INFO 6244 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-17 01:10:01.996  INFO 6244 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 795 ms
+2020-07-17 01:10:02.401  INFO 6244 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-17 01:10:02.678  INFO 6244 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2020-07-17 01:10:02.680  INFO 6244 --- [main] cn.yznu.csi.CsiApplication               : Started CsiApplication in 2.06 seconds (JVM running for 2.975)
+2020-07-17 01:10:04.832  INFO 6244 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-17 01:10:04.832  INFO 6244 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-17 01:10:04.838  INFO 6244 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-07-17 01:10:04.856  INFO 6244 --- [http-nio-8081-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 01:10:04.856  INFO 6244 --- [http-nio-8081-exec-1] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://localhost:8081/', ip='0:0:0:0:0:0:0:1', classMethod='cn.yznu.csi.controller.testController.test', args=[{}]}
+2020-07-17 01:10:04.860  INFO 6244 --- [http-nio-8081-exec-1] cn.yznu.csi.aspect.LogAspect             : Result : test
+2020-07-17 01:10:04.860  INFO 6244 --- [http-nio-8081-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 01:10:14.734  INFO 6244 --- [http-nio-8081-exec-3] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 01:10:14.735  INFO 6244 --- [http-nio-8081-exec-3] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://localhost:8081/dept', ip='0:0:0:0:0:0:0:1', classMethod='cn.yznu.csi.controller.DeptController.index2', args=[{}]}
+2020-07-17 01:10:14.750  INFO 6244 --- [http-nio-8081-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-17 01:10:14.832  INFO 6244 --- [http-nio-8081-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-17 01:10:14.858  INFO 6244 --- [http-nio-8081-exec-3] cn.yznu.csi.aspect.LogAspect             : Result : dept/list
+2020-07-17 01:10:14.858  INFO 6244 --- [http-nio-8081-exec-3] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 01:10:39.683  INFO 6244 --- [http-nio-8081-exec-4] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 01:10:39.683  INFO 6244 --- [http-nio-8081-exec-4] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://localhost:8081/dept', ip='0:0:0:0:0:0:0:1', classMethod='cn.yznu.csi.controller.DeptController.index2', args=[{}]}
+2020-07-17 01:10:39.685  INFO 6244 --- [http-nio-8081-exec-4] cn.yznu.csi.aspect.LogAspect             : Result : dept/list
+2020-07-17 01:10:39.685  INFO 6244 --- [http-nio-8081-exec-4] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 01:10:51.136  INFO 6244 --- [http-nio-8081-exec-5] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 01:10:51.136  INFO 6244 --- [http-nio-8081-exec-5] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://localhost:8081/ManageEmployee', ip='0:0:0:0:0:0:0:1', classMethod='cn.yznu.csi.controller.ManageEmployeeController.index', args=[{}]}
+2020-07-17 01:10:51.142  INFO 6244 --- [http-nio-8081-exec-5] cn.yznu.csi.aspect.LogAspect             : Result : /ManageEmployee/list
+2020-07-17 01:10:51.143  INFO 6244 --- [http-nio-8081-exec-5] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 01:10:53.576  INFO 6244 --- [http-nio-8081-exec-6] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 01:10:53.576  INFO 6244 --- [http-nio-8081-exec-6] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://localhost:8081/ManageEmployee', ip='0:0:0:0:0:0:0:1', classMethod='cn.yznu.csi.controller.ManageEmployeeController.index', args=[{}]}
+2020-07-17 01:10:53.578  INFO 6244 --- [http-nio-8081-exec-6] cn.yznu.csi.aspect.LogAspect             : Result : /ManageEmployee/list
+2020-07-17 01:10:53.578  INFO 6244 --- [http-nio-8081-exec-6] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 01:10:55.550  INFO 6244 --- [http-nio-8081-exec-7] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 01:10:55.550  INFO 6244 --- [http-nio-8081-exec-7] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://localhost:8081/ManageEmployee', ip='0:0:0:0:0:0:0:1', classMethod='cn.yznu.csi.controller.ManageEmployeeController.index', args=[{}]}
+2020-07-17 01:10:55.552  INFO 6244 --- [http-nio-8081-exec-7] cn.yznu.csi.aspect.LogAspect             : Result : /ManageEmployee/list
+2020-07-17 01:10:55.552  INFO 6244 --- [http-nio-8081-exec-7] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 01:13:53.808  INFO 6244 --- [http-nio-8081-exec-2] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 01:13:53.809  INFO 6244 --- [http-nio-8081-exec-2] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://106.81.127.142:8081/', ip='195.54.160.21', classMethod='cn.yznu.csi.controller.testController.test', args=[{}]}
+2020-07-17 01:13:53.810  INFO 6244 --- [http-nio-8081-exec-2] cn.yznu.csi.aspect.LogAspect             : Result : test
+2020-07-17 01:13:53.811  INFO 6244 --- [http-nio-8081-exec-2] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 08:49:10.187  INFO 10508 --- [main] cn.yznu.csi.CsiApplication               : Starting CsiApplication on LAPTOP-DDQ3HK83 with PID 10508 (E:\桌面\csi\target\classes started by 44129 in E:\桌面\csi)
+2020-07-17 08:49:10.189  INFO 10508 --- [main] cn.yznu.csi.CsiApplication               : The following profiles are active: dev
+2020-07-17 08:49:11.131  INFO 10508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-17 08:49:11.139  INFO 10508 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-17 08:49:11.139  INFO 10508 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-17 08:49:11.233  INFO 10508 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-17 08:49:11.234  INFO 10508 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 983 ms
+2020-07-17 08:49:11.847  INFO 10508 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-17 08:49:12.153  INFO 10508 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-17 08:49:12.155  INFO 10508 --- [main] cn.yznu.csi.CsiApplication               : Started CsiApplication in 2.465 seconds (JVM running for 3.484)
+2020-07-17 08:58:35.892  INFO 10508 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-17 08:58:35.892  INFO 10508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-17 08:58:35.899  INFO 10508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-07-17 08:58:35.919  INFO 10508 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 08:58:35.919  INFO 10508 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.testController.test', args=[{}]}
+2020-07-17 08:58:35.923  INFO 10508 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : Result : test
+2020-07-17 08:58:35.924  INFO 10508 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 09:00:15.522  INFO 10508 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 09:00:15.523  INFO 10508 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/dept', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.DeptController.index2', args=[{}]}
+2020-07-17 09:00:15.542  INFO 10508 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-17 09:00:15.660  INFO 10508 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-17 09:00:15.695  INFO 10508 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : Result : dept/list
+2020-07-17 09:00:15.696  INFO 10508 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 09:00:18.687  INFO 10508 --- [http-nio-8080-exec-6] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 09:00:18.688  INFO 10508 --- [http-nio-8080-exec-6] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/position', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.PositionController.list', args=[{}]}
+2020-07-17 09:00:18.711  INFO 10508 --- [http-nio-8080-exec-6] cn.yznu.csi.aspect.LogAspect             : Result : position/list
+2020-07-17 09:00:18.711  INFO 10508 --- [http-nio-8080-exec-6] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 09:00:20.488  INFO 10508 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 09:00:20.488  INFO 10508 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/ManageEmployee', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.ManageEmployeeController.index', args=[{}]}
+2020-07-17 09:00:20.494  INFO 10508 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : Result : /ManageEmployee/list
+2020-07-17 09:00:20.494  INFO 10508 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 09:01:14.842  INFO 13656 --- [main] cn.yznu.csi.CsiApplication               : Starting CsiApplication on LAPTOP-DDQ3HK83 with PID 13656 (E:\桌面\csi\target\classes started by 44129 in E:\桌面\csi)
+2020-07-17 09:01:14.846  INFO 13656 --- [main] cn.yznu.csi.CsiApplication               : The following profiles are active: dev
+2020-07-17 09:01:15.686  INFO 13656 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-17 09:01:15.692  INFO 13656 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-17 09:01:15.692  INFO 13656 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-17 09:01:15.762  INFO 13656 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-17 09:01:15.762  INFO 13656 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 836 ms
+2020-07-17 09:01:16.152  INFO 13656 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-17 09:01:16.391  INFO 13656 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-17 09:01:16.393  INFO 13656 --- [main] cn.yznu.csi.CsiApplication               : Started CsiApplication in 1.981 seconds (JVM running for 2.816)
+2020-07-17 09:22:03.727  INFO 13656 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-17 09:22:03.728  INFO 13656 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-17 09:22:03.734  INFO 13656 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-07-17 09:22:03.750  INFO 13656 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 09:22:03.751  INFO 13656 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/dept', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.DeptController.index2', args=[{}]}
+2020-07-17 09:22:03.765  INFO 13656 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-17 09:22:03.845  INFO 13656 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-17 09:22:03.869  INFO 13656 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : Result : dept/list
+2020-07-17 09:22:03.869  INFO 13656 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 09:22:07.380  INFO 13656 --- [http-nio-8080-exec-6] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 09:22:07.380  INFO 13656 --- [http-nio-8080-exec-6] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/dept/add', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.DeptController.add', args=[]}
+2020-07-17 09:22:07.380  INFO 13656 --- [http-nio-8080-exec-6] cn.yznu.csi.aspect.LogAspect             : Result : /dept/add
+2020-07-17 09:22:07.381  INFO 13656 --- [http-nio-8080-exec-6] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 09:22:11.880  INFO 13656 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 09:22:11.880  INFO 13656 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/dept/add/a', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.DeptController.add', args=[test2, 1, test, {}]}
+2020-07-17 09:22:11.902  INFO 13656 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : Result : redirect:/dept
+2020-07-17 09:22:11.902  INFO 13656 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 09:22:11.931  INFO 13656 --- [http-nio-8080-exec-4] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 09:22:11.931  INFO 13656 --- [http-nio-8080-exec-4] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/dept;jsessionid=8F50FFCD14F7B0AE0015BC4457DA72A2', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.DeptController.index2', args=[{msg=添加成功}]}
+2020-07-17 09:22:11.933  INFO 13656 --- [http-nio-8080-exec-4] cn.yznu.csi.aspect.LogAspect             : Result : dept/list
+2020-07-17 09:22:11.933  INFO 13656 --- [http-nio-8080-exec-4] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 09:22:17.661  INFO 13656 --- [http-nio-8080-exec-10] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 09:22:17.661  INFO 13656 --- [http-nio-8080-exec-10] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/dept/list/10/update', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.DeptController.update', args=[10, {}]}
+2020-07-17 09:22:17.671  INFO 13656 --- [http-nio-8080-exec-10] cn.yznu.csi.aspect.LogAspect             : Result : /dept/update
+2020-07-17 09:22:17.671  INFO 13656 --- [http-nio-8080-exec-10] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 09:22:21.724  INFO 13656 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 09:22:21.724  INFO 13656 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/dept/update/a', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.DeptController.update', args=[10, test2, 7, test, {}]}
+2020-07-17 09:22:21.731  INFO 13656 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : Result : redirect:/dept
+2020-07-17 09:22:21.731  INFO 13656 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 09:22:21.737  INFO 13656 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 09:22:21.737  INFO 13656 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/dept', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.DeptController.index2', args=[{msg=修改成功}]}
+2020-07-17 09:22:21.740  INFO 13656 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : Result : dept/list
+2020-07-17 09:22:21.740  INFO 13656 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 09:22:26.659  INFO 13656 --- [http-nio-8080-exec-8] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 09:22:26.660  INFO 13656 --- [http-nio-8080-exec-8] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/dept/list/10/delete', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.DeptController.delete', args=[10, {}]}
+2020-07-17 09:22:26.670  INFO 13656 --- [http-nio-8080-exec-8] cn.yznu.csi.aspect.LogAspect             : Result : redirect:/dept
+2020-07-17 09:22:26.670  INFO 13656 --- [http-nio-8080-exec-8] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 09:22:26.676  INFO 13656 --- [http-nio-8080-exec-9] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 09:22:26.676  INFO 13656 --- [http-nio-8080-exec-9] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/dept', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.DeptController.index2', args=[{msg=删除成功}]}
+2020-07-17 09:22:26.678  INFO 13656 --- [http-nio-8080-exec-9] cn.yznu.csi.aspect.LogAspect             : Result : dept/list
+2020-07-17 09:22:26.678  INFO 13656 --- [http-nio-8080-exec-9] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 09:22:29.034  INFO 13656 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 09:22:29.035  INFO 13656 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.testController.test', args=[{}]}
+2020-07-17 09:22:29.039  INFO 13656 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : Result : test
+2020-07-17 09:22:29.040  INFO 13656 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 09:22:30.602  INFO 13656 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 09:22:30.602  INFO 13656 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/position', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.PositionController.list', args=[{}]}
+2020-07-17 09:22:30.611  INFO 13656 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : Result : position/list
+2020-07-17 09:22:30.611  INFO 13656 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 09:22:33.521  INFO 13656 --- [http-nio-8080-exec-6] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 09:22:33.521  INFO 13656 --- [http-nio-8080-exec-6] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/ManageEmployee', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.ManageEmployeeController.index', args=[{}]}
+2020-07-17 09:22:33.526  INFO 13656 --- [http-nio-8080-exec-6] cn.yznu.csi.aspect.LogAspect             : Result : /ManageEmployee/list
+2020-07-17 09:22:33.526  INFO 13656 --- [http-nio-8080-exec-6] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 09:22:40.413  INFO 13656 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 09:22:40.413  INFO 13656 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/position', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.PositionController.list', args=[{}]}
+2020-07-17 09:22:40.425  INFO 13656 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : Result : position/list
+2020-07-17 09:22:40.426  INFO 13656 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 10:36:43.893  INFO 1476 --- [main] cn.yznu.csi.CsiApplication               : Starting CsiApplication on LAPTOP-DDQ3HK83 with PID 1476 (E:\桌面\csi\target\classes started by 44129 in E:\桌面\csi)
+2020-07-17 10:36:43.895  INFO 1476 --- [main] cn.yznu.csi.CsiApplication               : The following profiles are active: dev
+2020-07-17 10:36:44.904  INFO 1476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-17 10:36:44.910  INFO 1476 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-17 10:36:44.910  INFO 1476 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-17 10:36:44.982  INFO 1476 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-17 10:36:44.982  INFO 1476 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1017 ms
+2020-07-17 10:36:45.472  INFO 1476 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-17 10:36:45.975  INFO 1476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-17 10:36:45.979  INFO 1476 --- [main] cn.yznu.csi.CsiApplication               : Started CsiApplication in 2.528 seconds (JVM running for 3.511)
+2020-07-17 10:36:51.633  INFO 1476 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-17 10:36:51.633  INFO 1476 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-17 10:36:51.641  INFO 1476 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-07-17 10:36:51.659  INFO 1476 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 10:36:51.659  INFO 1476 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.testController.test', args=[{}]}
+2020-07-17 10:36:51.662  INFO 1476 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : Result : test
+2020-07-17 10:36:51.662  INFO 1476 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 10:37:08.625  INFO 1476 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 10:37:08.625  INFO 1476 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/dept', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.DeptController.index2', args=[{}]}
+2020-07-17 10:37:08.643  INFO 1476 --- [http-nio-8080-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-17 10:37:08.747  INFO 1476 --- [http-nio-8080-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-17 10:37:08.777  INFO 1476 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : Result : dept/list
+2020-07-17 10:37:08.777  INFO 1476 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 10:37:27.892  INFO 1476 --- [http-nio-8080-exec-8] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 10:37:27.892  INFO 1476 --- [http-nio-8080-exec-8] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/dept/list/1/update', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.DeptController.update', args=[1, {}]}
+2020-07-17 10:37:27.896  INFO 1476 --- [http-nio-8080-exec-8] cn.yznu.csi.aspect.LogAspect             : Result : /dept/update
+2020-07-17 10:37:27.896  INFO 1476 --- [http-nio-8080-exec-8] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 10:37:45.470  INFO 1476 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 10:37:45.470  INFO 1476 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/dept/list/5/update', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.DeptController.update', args=[5, {}]}
+2020-07-17 10:37:45.471  INFO 1476 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : Result : /dept/update
+2020-07-17 10:37:45.471  INFO 1476 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 10:37:47.197  INFO 1476 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 10:37:47.197  INFO 1476 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/dept/update/a', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.DeptController.update', args=[5, 安保部, 2, 公司安保, {}]}
+2020-07-17 10:37:47.200  INFO 1476 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : Result : redirect:/dept
+2020-07-17 10:37:47.200  INFO 1476 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 10:37:47.225  INFO 1476 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 10:37:47.225  INFO 1476 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/dept;jsessionid=2A2E083CB8C4ADDF010980895DF2F047', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.DeptController.index2', args=[{msg=修改成功}]}
+2020-07-17 10:37:47.226  INFO 1476 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : Result : dept/list
+2020-07-17 10:37:47.227  INFO 1476 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 10:37:55.693  INFO 1476 --- [http-nio-8080-exec-9] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 10:37:55.693  INFO 1476 --- [http-nio-8080-exec-9] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/dept/add', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.DeptController.add', args=[]}
+2020-07-17 10:37:55.693  INFO 1476 --- [http-nio-8080-exec-9] cn.yznu.csi.aspect.LogAspect             : Result : /dept/add
+2020-07-17 10:37:55.693  INFO 1476 --- [http-nio-8080-exec-9] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 10:37:59.010  INFO 1476 --- [http-nio-8080-exec-10] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 10:37:59.010  INFO 1476 --- [http-nio-8080-exec-10] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/dept/add/a', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.DeptController.add', args=[test2, 1, test, {}]}
+2020-07-17 10:37:59.012  INFO 1476 --- [http-nio-8080-exec-10] cn.yznu.csi.aspect.LogAspect             : Result : redirect:/dept
+2020-07-17 10:37:59.012  INFO 1476 --- [http-nio-8080-exec-10] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 10:37:59.017  INFO 1476 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 10:37:59.017  INFO 1476 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/dept', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.DeptController.index2', args=[{msg=添加成功}]}
+2020-07-17 10:37:59.019  INFO 1476 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : Result : dept/list
+2020-07-17 10:37:59.019  INFO 1476 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 10:38:03.757  INFO 1476 --- [http-nio-8080-exec-4] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 10:38:03.757  INFO 1476 --- [http-nio-8080-exec-4] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/dept/list/6/delete', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.DeptController.delete', args=[6, {}]}
+2020-07-17 10:38:03.760  INFO 1476 --- [http-nio-8080-exec-4] cn.yznu.csi.aspect.LogAspect             : Result : redirect:/dept
+2020-07-17 10:38:03.760  INFO 1476 --- [http-nio-8080-exec-4] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 10:38:03.768  INFO 1476 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 10:38:03.768  INFO 1476 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/dept', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.DeptController.index2', args=[{msg=删除成功}]}
+2020-07-17 10:38:03.770  INFO 1476 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : Result : dept/list
+2020-07-17 10:38:03.770  INFO 1476 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 10:38:35.801  INFO 1476 --- [http-nio-8080-exec-8] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 10:38:35.802  INFO 1476 --- [http-nio-8080-exec-8] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.testController.test', args=[{}]}
+2020-07-17 10:38:35.802  INFO 1476 --- [http-nio-8080-exec-8] cn.yznu.csi.aspect.LogAspect             : Result : test
+2020-07-17 10:38:35.802  INFO 1476 --- [http-nio-8080-exec-8] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 10:38:37.560  INFO 1476 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 10:38:37.560  INFO 1476 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/ManageEmployee', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.ManageEmployeeController.index', args=[{}]}
+2020-07-17 10:38:37.570  INFO 1476 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : Result : /ManageEmployee/list
+2020-07-17 10:38:37.570  INFO 1476 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 10:39:13.567  INFO 1476 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 10:39:13.568  INFO 1476 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/position', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.PositionController.list', args=[{}]}
+2020-07-17 10:39:13.586  INFO 1476 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : Result : position/list
+2020-07-17 10:39:13.586  INFO 1476 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 10:39:16.407  INFO 1476 --- [http-nio-8080-exec-6] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 10:39:16.407  INFO 1476 --- [http-nio-8080-exec-6] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/position/add', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.PositionController.add', args=[]}
+2020-07-17 10:39:16.407  INFO 1476 --- [http-nio-8080-exec-6] cn.yznu.csi.aspect.LogAspect             : Result : /position/add
+2020-07-17 10:39:16.407  INFO 1476 --- [http-nio-8080-exec-6] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 10:50:39.319  INFO 8280 --- [main] cn.yznu.csi.CsiApplication               : Starting CsiApplication on LAPTOP-DDQ3HK83 with PID 8280 (E:\桌面\csi\target\classes started by 44129 in E:\桌面\csi)
+2020-07-17 10:50:39.321  INFO 8280 --- [main] cn.yznu.csi.CsiApplication               : The following profiles are active: dev
+2020-07-17 10:50:40.179  INFO 8280 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-17 10:50:40.184  INFO 8280 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-17 10:50:40.185  INFO 8280 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-17 10:50:40.251  INFO 8280 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-17 10:50:40.252  INFO 8280 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 852 ms
+2020-07-17 10:50:40.657  INFO 8280 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-17 10:50:40.900  INFO 8280 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-17 10:50:40.902  INFO 8280 --- [main] cn.yznu.csi.CsiApplication               : Started CsiApplication in 1.998 seconds (JVM running for 2.811)
+2020-07-17 10:50:46.030  INFO 8280 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-17 10:50:46.031  INFO 8280 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-17 10:50:46.037  INFO 8280 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-07-17 10:50:46.058  INFO 8280 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 10:50:46.058  INFO 8280 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.testController.test', args=[{}]}
+2020-07-17 10:50:46.061  INFO 8280 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : Result : 1
+2020-07-17 10:50:46.062  INFO 8280 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 10:50:46.147 ERROR 8280 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "1": Error resolving template [1], template might not exist or might not be accessible by any of the configured Template Resolvers
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [1], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-07-17 10:50:46.149 ERROR 8280 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [1], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [1], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-07-17 10:51:06.371  INFO 5956 --- [main] cn.yznu.csi.CsiApplication               : Starting CsiApplication on LAPTOP-DDQ3HK83 with PID 5956 (E:\桌面\csi\target\classes started by 44129 in E:\桌面\csi)
+2020-07-17 10:51:06.374  INFO 5956 --- [main] cn.yznu.csi.CsiApplication               : The following profiles are active: dev
+2020-07-17 10:51:07.261  INFO 5956 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-17 10:51:07.267  INFO 5956 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-17 10:51:07.267  INFO 5956 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-17 10:51:07.339  INFO 5956 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-17 10:51:07.339  INFO 5956 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 893 ms
+2020-07-17 10:51:07.737  INFO 5956 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-17 10:51:07.983  INFO 5956 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-17 10:51:07.985  INFO 5956 --- [main] cn.yznu.csi.CsiApplication               : Started CsiApplication in 2.046 seconds (JVM running for 2.89)
+2020-07-17 10:51:09.800  INFO 5956 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-17 10:51:09.800  INFO 5956 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-17 10:51:09.806  INFO 5956 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-07-17 10:51:09.822  INFO 5956 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 10:51:09.822  INFO 5956 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.testController.test', args=[{}]}
+2020-07-17 10:51:09.826  INFO 5956 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : Result : 1.jsp
+2020-07-17 10:51:09.826  INFO 5956 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 10:51:09.901 ERROR 5956 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "1.jsp": Error resolving template [1.jsp], template might not exist or might not be accessible by any of the configured Template Resolvers
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [1.jsp], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-07-17 10:51:09.903 ERROR 5956 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [1.jsp], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [1.jsp], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-07-17 10:51:28.075  INFO 11944 --- [main] cn.yznu.csi.CsiApplication               : Starting CsiApplication on LAPTOP-DDQ3HK83 with PID 11944 (E:\桌面\csi\target\classes started by 44129 in E:\桌面\csi)
+2020-07-17 10:51:28.079  INFO 11944 --- [main] cn.yznu.csi.CsiApplication               : The following profiles are active: dev
+2020-07-17 10:51:28.889  INFO 11944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-17 10:51:28.896  INFO 11944 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-17 10:51:28.896  INFO 11944 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-17 10:51:28.962  INFO 11944 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-17 10:51:28.962  INFO 11944 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 812 ms
+2020-07-17 10:51:29.359  INFO 11944 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-17 10:51:29.597  INFO 11944 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-17 10:51:29.599  INFO 11944 --- [main] cn.yznu.csi.CsiApplication               : Started CsiApplication in 1.909 seconds (JVM running for 2.709)
+2020-07-17 11:08:40.246  INFO 11944 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-17 11:08:40.246  INFO 11944 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-17 11:08:40.254  INFO 11944 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-07-17 11:08:40.270  INFO 11944 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:08:40.271  INFO 11944 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.testController.test', args=[{}]}
+2020-07-17 11:08:40.274  INFO 11944 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : Result : test
+2020-07-17 11:08:40.274  INFO 11944 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:08:50.454  INFO 11944 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:08:50.454  INFO 11944 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.testController.test', args=[{}]}
+2020-07-17 11:08:50.454  INFO 11944 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : Result : test
+2020-07-17 11:08:50.454  INFO 11944 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:24:23.918  INFO 11944 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:24:23.918  INFO 11944 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.testController.test', args=[{}]}
+2020-07-17 11:24:23.918  INFO 11944 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : Result : test
+2020-07-17 11:24:23.918  INFO 11944 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:32:40.596  INFO 19476 --- [main] cn.yznu.csi.CsiApplication               : Starting CsiApplication on LAPTOP-DDQ3HK83 with PID 19476 (E:\桌面\csi\target\classes started by 44129 in E:\桌面\csi)
+2020-07-17 11:32:40.631  INFO 19476 --- [main] cn.yznu.csi.CsiApplication               : The following profiles are active: dev
+2020-07-17 11:32:41.553  INFO 19476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-17 11:32:41.559  INFO 19476 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-17 11:32:41.560  INFO 19476 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-17 11:32:41.649  INFO 19476 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-17 11:32:41.649  INFO 19476 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 978 ms
+2020-07-17 11:32:42.162  INFO 19476 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-17 11:32:42.464  INFO 19476 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-17 11:32:42.466  INFO 19476 --- [main] cn.yznu.csi.CsiApplication               : Started CsiApplication in 2.298 seconds (JVM running for 3.347)
+2020-07-17 11:33:29.980  INFO 19476 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-17 11:33:29.980  INFO 19476 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-17 11:33:29.991  INFO 19476 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-07-17 11:33:30.031  INFO 19476 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:33:30.031  INFO 19476 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.testController.test', args=[{}]}
+2020-07-17 11:33:30.044  INFO 19476 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : Result : test
+2020-07-17 11:33:30.045  INFO 19476 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:34:13.165  INFO 19476 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:34:13.165  INFO 19476 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/position', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.PositionController.list', args=[{}]}
+2020-07-17 11:34:13.197  INFO 19476 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-07-17 11:34:13.407  INFO 19476 --- [http-nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-07-17 11:34:13.497  INFO 19476 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : Result : position/list
+2020-07-17 11:34:13.498  INFO 19476 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:34:17.904  INFO 19476 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:34:17.904  INFO 19476 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/position/list/1/delete', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.PositionController.delete', args=[1, {}]}
+2020-07-17 11:34:18.049  INFO 19476 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : Result : redirect:/position
+2020-07-17 11:34:18.049  INFO 19476 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:34:18.126  INFO 19476 --- [http-nio-8080-exec-4] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:34:18.127  INFO 19476 --- [http-nio-8080-exec-4] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/position', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.PositionController.list', args=[{msg=该角色已被引用，删除失败}]}
+2020-07-17 11:34:18.146  INFO 19476 --- [http-nio-8080-exec-4] cn.yznu.csi.aspect.LogAspect             : Result : position/list
+2020-07-17 11:34:18.147  INFO 19476 --- [http-nio-8080-exec-4] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:34:21.986  INFO 19476 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:34:21.987  INFO 19476 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/position', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.PositionController.list', args=[{}]}
+2020-07-17 11:34:22.005  INFO 19476 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : Result : position/list
+2020-07-17 11:34:22.005  INFO 19476 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:34:30.322  INFO 19476 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:34:30.322  INFO 19476 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.testController.test', args=[{}]}
+2020-07-17 11:34:30.322  INFO 19476 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : Result : test
+2020-07-17 11:34:30.322  INFO 19476 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:38:15.806  INFO 19476 --- [http-nio-8080-exec-10] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:38:15.807  INFO 19476 --- [http-nio-8080-exec-10] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/ManageEmployee', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.ManageEmployeeController.index', args=[{}]}
+2020-07-17 11:38:15.817  INFO 19476 --- [http-nio-8080-exec-10] cn.yznu.csi.aspect.LogAspect             : Result : /ManageEmployee/list
+2020-07-17 11:38:15.817  INFO 19476 --- [http-nio-8080-exec-10] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:38:19.801  INFO 19476 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:38:19.802  INFO 19476 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/ManageEmployee/search', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.ManageEmployeeController.search', args=[0, 周华宇, {}, {}]}
+2020-07-17 11:38:19.833  INFO 19476 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : Result : /ManageEmployee/list
+2020-07-17 11:38:19.833  INFO 19476 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:38:21.970  INFO 19476 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:38:21.970  INFO 19476 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/ManageEmployee/search', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.ManageEmployeeController.search', args=[11, , {}, {}]}
+2020-07-17 11:38:21.973  INFO 19476 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : Result : /ManageEmployee/list
+2020-07-17 11:38:21.973  INFO 19476 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:38:23.987  INFO 19476 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:38:23.988  INFO 19476 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/ManageEmployee/search', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.ManageEmployeeController.search', args=[0, , {}, {}]}
+2020-07-17 11:38:23.988  INFO 19476 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : Result : redirect:/ManageEmployee
+2020-07-17 11:38:23.988  INFO 19476 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:38:23.997  INFO 19476 --- [http-nio-8080-exec-4] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:38:23.997  INFO 19476 --- [http-nio-8080-exec-4] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/ManageEmployee', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.ManageEmployeeController.index', args=[{msg=查询失败，属性不能全为空}]}
+2020-07-17 11:38:23.999  INFO 19476 --- [http-nio-8080-exec-4] cn.yznu.csi.aspect.LogAspect             : Result : /ManageEmployee/list
+2020-07-17 11:38:24.000  INFO 19476 --- [http-nio-8080-exec-4] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:38:28.356  INFO 19476 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:38:28.356  INFO 19476 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/ManageEmployee/search', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.ManageEmployeeController.search', args=[1, , {}, {}]}
+2020-07-17 11:38:28.360  INFO 19476 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : Result : /ManageEmployee/list
+2020-07-17 11:38:28.360  INFO 19476 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:38:32.315  INFO 19476 --- [http-nio-8080-exec-6] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:38:32.315  INFO 19476 --- [http-nio-8080-exec-6] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/ManageEmployee/add', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.ManageEmployeeController.add', args=[]}
+2020-07-17 11:38:32.315  INFO 19476 --- [http-nio-8080-exec-6] cn.yznu.csi.aspect.LogAspect             : Result : /ManageEmployee/add
+2020-07-17 11:38:32.316  INFO 19476 --- [http-nio-8080-exec-6] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:38:36.564  INFO 19476 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:38:36.565  INFO 19476 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.testController.test', args=[{}]}
+2020-07-17 11:38:36.565  INFO 19476 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : Result : test
+2020-07-17 11:38:36.565  INFO 19476 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:42:50.290  INFO 19476 --- [http-nio-8080-exec-10] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:42:50.290  INFO 19476 --- [http-nio-8080-exec-10] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/ManageEmployee', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.ManageEmployeeController.index', args=[{}]}
+2020-07-17 11:42:50.293  INFO 19476 --- [http-nio-8080-exec-10] cn.yznu.csi.aspect.LogAspect             : Result : /ManageEmployee/list
+2020-07-17 11:42:50.293  INFO 19476 --- [http-nio-8080-exec-10] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:42:58.228  INFO 19476 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:42:58.229  INFO 19476 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/ManageEmployee/search', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.ManageEmployeeController.search', args=[0, 周华宇, {}, {}]}
+2020-07-17 11:42:58.231  INFO 19476 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : Result : /ManageEmployee/list
+2020-07-17 11:42:58.231  INFO 19476 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:43:00.075  INFO 19476 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:43:00.075  INFO 19476 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/ManageEmployee/add', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.ManageEmployeeController.add', args=[]}
+2020-07-17 11:43:00.075  INFO 19476 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : Result : /ManageEmployee/add
+2020-07-17 11:43:00.075  INFO 19476 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:43:02.532  INFO 19476 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:43:02.532  INFO 19476 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/ManageEmployee', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.ManageEmployeeController.index', args=[{}]}
+2020-07-17 11:43:02.544  INFO 19476 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : Result : /ManageEmployee/list
+2020-07-17 11:43:02.544  INFO 19476 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:43:11.948  INFO 19476 --- [http-nio-8080-exec-4] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:43:11.948  INFO 19476 --- [http-nio-8080-exec-4] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/ManageEmployee/search', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.ManageEmployeeController.search', args=[0, lll, {}, {}]}
+2020-07-17 11:43:11.952  INFO 19476 --- [http-nio-8080-exec-4] cn.yznu.csi.aspect.LogAspect             : Result : /ManageEmployee/list
+2020-07-17 11:43:11.952  INFO 19476 --- [http-nio-8080-exec-4] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:43:15.739  INFO 19476 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:43:15.739  INFO 19476 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/ManageEmployee/search', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.ManageEmployeeController.search', args=[0, 周华宇, {}, {}]}
+2020-07-17 11:43:15.742  INFO 19476 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : Result : /ManageEmployee/list
+2020-07-17 11:43:15.742  INFO 19476 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:45:40.140  INFO 19476 --- [http-nio-8080-exec-8] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:45:40.140  INFO 19476 --- [http-nio-8080-exec-8] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.testController.test', args=[{}]}
+2020-07-17 11:45:40.140  INFO 19476 --- [http-nio-8080-exec-8] cn.yznu.csi.aspect.LogAspect             : Result : test
+2020-07-17 11:45:40.140  INFO 19476 --- [http-nio-8080-exec-8] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:45:41.634  INFO 19476 --- [http-nio-8080-exec-9] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:45:41.634  INFO 19476 --- [http-nio-8080-exec-9] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/dept', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.DeptController.index2', args=[{}]}
+2020-07-17 11:45:41.644  INFO 19476 --- [http-nio-8080-exec-9] cn.yznu.csi.aspect.LogAspect             : Result : dept/list
+2020-07-17 11:45:41.645  INFO 19476 --- [http-nio-8080-exec-9] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:46:09.564  INFO 19476 --- [http-nio-8080-exec-10] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:46:09.564  INFO 19476 --- [http-nio-8080-exec-10] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/position', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.PositionController.list', args=[{}]}
+2020-07-17 11:46:09.573  INFO 19476 --- [http-nio-8080-exec-10] cn.yznu.csi.aspect.LogAspect             : Result : position/list
+2020-07-17 11:46:09.573  INFO 19476 --- [http-nio-8080-exec-10] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:46:18.627  INFO 19476 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:46:18.628  INFO 19476 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/position/add', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.PositionController.add', args=[]}
+2020-07-17 11:46:18.628  INFO 19476 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : Result : /position/add
+2020-07-17 11:46:18.628  INFO 19476 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:46:22.339  INFO 19476 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:46:22.340  INFO 19476 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/position/list/4/update', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.PositionController.update', args=[4, {}]}
+2020-07-17 11:46:22.342  INFO 19476 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : Result : /position/update
+2020-07-17 11:46:22.342  INFO 19476 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:46:24.325  INFO 19476 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:46:24.326  INFO 19476 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/position/update/a', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.PositionController.update', args=[4, 测试部员工, 测试项目1, {}]}
+2020-07-17 11:46:24.329  INFO 19476 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : Result : redirect:/position
+2020-07-17 11:46:24.329  INFO 19476 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:46:24.336  INFO 19476 --- [http-nio-8080-exec-4] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:46:24.337  INFO 19476 --- [http-nio-8080-exec-4] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/position', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.PositionController.list', args=[{msg=修改成功}]}
+2020-07-17 11:46:24.349  INFO 19476 --- [http-nio-8080-exec-4] cn.yznu.csi.aspect.LogAspect             : Result : position/list
+2020-07-17 11:46:24.349  INFO 19476 --- [http-nio-8080-exec-4] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:46:31.364  INFO 19476 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:46:31.364  INFO 19476 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/position/list/4/search', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.PositionController.search', args=[4, {}]}
+2020-07-17 11:46:31.369  INFO 19476 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : Result : /position/list
+2020-07-17 11:46:31.369  INFO 19476 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:46:32.589  INFO 19476 --- [http-nio-8080-exec-6] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:46:32.590  INFO 19476 --- [http-nio-8080-exec-6] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/position/list/1/search', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.PositionController.search', args=[1, {}]}
+2020-07-17 11:46:32.601  INFO 19476 --- [http-nio-8080-exec-6] cn.yznu.csi.aspect.LogAspect             : Result : /position/list
+2020-07-17 11:46:32.602  INFO 19476 --- [http-nio-8080-exec-6] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:46:38.553  INFO 19476 --- [http-nio-8080-exec-8] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:46:38.553  INFO 19476 --- [http-nio-8080-exec-8] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/position', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.PositionController.list', args=[{}]}
+2020-07-17 11:46:38.563  INFO 19476 --- [http-nio-8080-exec-8] cn.yznu.csi.aspect.LogAspect             : Result : position/list
+2020-07-17 11:46:38.564  INFO 19476 --- [http-nio-8080-exec-8] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:46:40.806  INFO 19476 --- [http-nio-8080-exec-9] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:46:40.806  INFO 19476 --- [http-nio-8080-exec-9] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/position/list/1/set', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.PositionController.set', args=[1, {}]}
+2020-07-17 11:46:40.811  INFO 19476 --- [http-nio-8080-exec-9] cn.yznu.csi.aspect.LogAspect             : Result : /position/set
+2020-07-17 11:46:40.811  INFO 19476 --- [http-nio-8080-exec-9] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:46:43.356  INFO 19476 --- [http-nio-8080-exec-10] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:46:43.356  INFO 19476 --- [http-nio-8080-exec-10] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/position/set/a', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.PositionController.set', args=[4, 1, {}, {}]}
+2020-07-17 11:46:43.366  INFO 19476 --- [http-nio-8080-exec-10] cn.yznu.csi.aspect.LogAspect             : Result : /position/set
+2020-07-17 11:46:43.367  INFO 19476 --- [http-nio-8080-exec-10] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:46:44.852  INFO 19476 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:46:44.852  INFO 19476 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/position', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.PositionController.list', args=[{}]}
+2020-07-17 11:46:44.861  INFO 19476 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : Result : position/list
+2020-07-17 11:46:44.861  INFO 19476 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:46:52.154  INFO 19476 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:46:52.154  INFO 19476 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/position/list/1/delete', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.PositionController.delete', args=[1, {}]}
+2020-07-17 11:46:52.158  INFO 19476 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : Result : redirect:/position
+2020-07-17 11:46:52.159  INFO 19476 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:46:52.166  INFO 19476 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:46:52.166  INFO 19476 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/position', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.PositionController.list', args=[{msg=该角色已被引用，删除失败}]}
+2020-07-17 11:46:52.177  INFO 19476 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : Result : position/list
+2020-07-17 11:46:52.177  INFO 19476 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:46:59.478  INFO 19476 --- [http-nio-8080-exec-4] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:46:59.478  INFO 19476 --- [http-nio-8080-exec-4] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/position/list/1/set', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.PositionController.set', args=[1, {}]}
+2020-07-17 11:46:59.482  INFO 19476 --- [http-nio-8080-exec-4] cn.yznu.csi.aspect.LogAspect             : Result : /position/set
+2020-07-17 11:46:59.483  INFO 19476 --- [http-nio-8080-exec-4] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:47:02.132  INFO 19476 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:47:02.132  INFO 19476 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/position/list/delete2', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.PositionController.delete2', args=[4, 1, {}, {}]}
+2020-07-17 11:47:02.140  INFO 19476 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : Result : /position/set
+2020-07-17 11:47:02.141  INFO 19476 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:47:03.291  INFO 19476 --- [http-nio-8080-exec-6] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:47:03.291  INFO 19476 --- [http-nio-8080-exec-6] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/position', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.PositionController.list', args=[{}]}
+2020-07-17 11:47:03.300  INFO 19476 --- [http-nio-8080-exec-6] cn.yznu.csi.aspect.LogAspect             : Result : position/list
+2020-07-17 11:47:03.300  INFO 19476 --- [http-nio-8080-exec-6] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:47:06.277  INFO 19476 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:47:06.277  INFO 19476 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.testController.test', args=[{}]}
+2020-07-17 11:47:06.277  INFO 19476 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : Result : test
+2020-07-17 11:47:06.277  INFO 19476 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:47:08.209  INFO 19476 --- [http-nio-8080-exec-8] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:47:08.209  INFO 19476 --- [http-nio-8080-exec-8] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/ManageEmployee', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.ManageEmployeeController.index', args=[{}]}
+2020-07-17 11:47:08.211  INFO 19476 --- [http-nio-8080-exec-8] cn.yznu.csi.aspect.LogAspect             : Result : /ManageEmployee/list
+2020-07-17 11:47:08.212  INFO 19476 --- [http-nio-8080-exec-8] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:47:18.339  INFO 19476 --- [http-nio-8080-exec-9] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:47:18.339  INFO 19476 --- [http-nio-8080-exec-9] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/ManageEmployee/search', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.ManageEmployeeController.search', args=[0, 周华宇, {}, {}]}
+2020-07-17 11:47:18.342  INFO 19476 --- [http-nio-8080-exec-9] cn.yznu.csi.aspect.LogAspect             : Result : /ManageEmployee/list
+2020-07-17 11:47:18.342  INFO 19476 --- [http-nio-8080-exec-9] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:47:25.099  INFO 19476 --- [http-nio-8080-exec-10] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:47:25.099  INFO 19476 --- [http-nio-8080-exec-10] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/ManageEmployee/search', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.ManageEmployeeController.search', args=[12, 周华宇, {}, {}]}
+2020-07-17 11:47:25.101  INFO 19476 --- [http-nio-8080-exec-10] cn.yznu.csi.aspect.LogAspect             : Result : /ManageEmployee/list
+2020-07-17 11:47:25.101  INFO 19476 --- [http-nio-8080-exec-10] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:47:25.385  INFO 19476 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:47:25.386  INFO 19476 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/ManageEmployee/search', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.ManageEmployeeController.search', args=[0, , {}, {}]}
+2020-07-17 11:47:25.386  INFO 19476 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : Result : redirect:/ManageEmployee
+2020-07-17 11:47:25.386  INFO 19476 --- [http-nio-8080-exec-1] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:47:25.393  INFO 19476 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:47:25.393  INFO 19476 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/ManageEmployee', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.ManageEmployeeController.index', args=[{msg=查询失败，属性不能全为空}]}
+2020-07-17 11:47:25.395  INFO 19476 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : Result : /ManageEmployee/list
+2020-07-17 11:47:25.395  INFO 19476 --- [http-nio-8080-exec-2] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:47:33.045  INFO 19476 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:47:33.045  INFO 19476 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/ManageEmployee/search', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.ManageEmployeeController.search', args=[1, 周华宇, {}, {}]}
+2020-07-17 11:47:33.047  INFO 19476 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : Result : /ManageEmployee/list
+2020-07-17 11:47:33.048  INFO 19476 --- [http-nio-8080-exec-3] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:47:34.675  INFO 19476 --- [http-nio-8080-exec-4] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:47:34.675  INFO 19476 --- [http-nio-8080-exec-4] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/ManageEmployee', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.ManageEmployeeController.index', args=[{}]}
+2020-07-17 11:47:34.677  INFO 19476 --- [http-nio-8080-exec-4] cn.yznu.csi.aspect.LogAspect             : Result : /ManageEmployee/list
+2020-07-17 11:47:34.677  INFO 19476 --- [http-nio-8080-exec-4] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:47:35.321  INFO 19476 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:47:35.321  INFO 19476 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/ManageEmployee/add', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.ManageEmployeeController.add', args=[]}
+2020-07-17 11:47:35.321  INFO 19476 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : Result : /ManageEmployee/add
+2020-07-17 11:47:35.321  INFO 19476 --- [http-nio-8080-exec-5] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:47:40.871  INFO 19476 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:47:40.872  INFO 19476 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.testController.test', args=[{}]}
+2020-07-17 11:47:40.872  INFO 19476 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : Result : test
+2020-07-17 11:47:40.872  INFO 19476 --- [http-nio-8080-exec-7] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------
+2020-07-17 11:47:42.890  INFO 19476 --- [http-nio-8080-exec-8] cn.yznu.csi.aspect.LogAspect             : --------doBefore--------
+2020-07-17 11:47:42.891  INFO 19476 --- [http-nio-8080-exec-8] cn.yznu.csi.aspect.LogAspect             : Request : {url='http://127.0.0.1:8080/dept', ip='127.0.0.1', classMethod='cn.yznu.csi.controller.DeptController.index2', args=[{}]}
+2020-07-17 11:47:42.893  INFO 19476 --- [http-nio-8080-exec-8] cn.yznu.csi.aspect.LogAspect             : Result : dept/list
+2020-07-17 11:47:42.893  INFO 19476 --- [http-nio-8080-exec-8] cn.yznu.csi.aspect.LogAspect             : --------doAfter--------

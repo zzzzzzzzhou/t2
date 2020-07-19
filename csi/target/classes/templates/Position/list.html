@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>List</title>
+</head>
+<body>
+<h1>Position</h1>
+<h1>角色列表</h1>
+<a href="#" th:href="@{/position/add}">跳转到positionadd.html</a><br>
+<div class="ui success message" th:unless="${#strings.isEmpty(msg)}">
+    <i class="close icon"></i>
+    <div class="header">提示：</div>
+    <h3 th:text="${msg}">恭喜，操作成功！</h3>
+</div>
+<table>
+    <tr>
+        <th>角色ID</th>
+        <th>角色名称</th>
+        <th>角色工作</th>
+        <th>修改</th>
+        <th>删除</th>
+        <th>查询所属员工</th>
+
+    <tr th:each="position : ${list}">
+        <td th:text="${position.position_id}"></td>
+        <td th:text="${position.position_name}"></td>&nbsp;&nbsp;
+        <td th:text="${position.position_job}"></td>&nbsp;&nbsp;
+        <td><a href="#" th:href="@{/position/list/{position_id}/update(position_id=${position.position_id})}">修改</a>&nbsp;&nbsp;
+        </td>
+        <td><a href="#" th:href="@{/position/list/{position_id}/delete(position_id=${position.position_id})}"
+               onclick="return confirm('确定要删除该文章吗？三思啊! 删了可就没了！')">删除</a>
+        </td>
+        <td><a href="#" th:href="@{/position/list/{position_id}/search(position_id=${position.position_id})}">查询所属员工</a>
+        </td>
+    </tr>
+</table>
+
+<BR><br>
+<h3>员工信息</h3><a th:href="@{/position}">查看全部</a>
+<table style="border-collapse:separate; border-spacing:0px 10px;">
+    <tr>
+        <th>ID</th>
+        <th>登录名</th>
+        <th>登录密码</th>
+        <th>部门编号</th>
+        <th>员工名</th>
+        <th>性别</th>
+        <th>爱好</th>
+        <th>年龄</th>
+        <th>角色</th>
+        <th>编辑角色</th>
+        <!--        <th>修改</th>-->
+        <!--        <th>删除</th>-->
+        <tbody>
+        <tr th:each="employee : ${list1}">
+            <td th:text="${employee.Employee_id}">ID</td>
+            <td th:text="${employee.employeeloginname}">登录名</td>
+            <td th:text="${employee.employeepassword}">密码</td>
+            <td th:text="${employee.dept_num}">部门编号</td>
+            <td th:text="${employee.employee_name}">员工名</td>
+            <td th:text="${employee.sex}">性别</td>
+            <th th:text="${employee.hobby}">爱好</th>
+            <th th:text="${employee.age}">年龄</th>
+            <th>
+                <div th:each="position : ${employee.positionList}">
+                    <a th:text="${position.position_name}"  ></a>
+                </div>
+            </th>
+            <th> <a th:href="@{/position/list/{Employee_id}/set(Employee_id=${employee.Employee_id})}">编辑角色</a></th>
+        </tbody>
+</table>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+</body>
+</html>

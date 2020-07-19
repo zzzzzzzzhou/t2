@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>update</title>
+</head>
+<body>
+<h1>update</h1>
+<a href="#" th:href="@{/position}">跳转到角色管理首页</a><br><br>
+<form action="#" method="post" th:action="@{/position/update/a}">
+    角色ID；<input th:value="${position.getPosition_id()}" type="text" readonly="readonly" name="position_id"><br><br>
+   角色名称： <input th:value="${position.getPosition_name()}" type="text"  name="position_name"><br><br>
+    角色工作：<input th:value="${position.getPosition_job()}" type="text"  name="position_job"><br><br>
+    <input type="submit" value="提交">
+</form>
+<div class="ui success message" th:unless="${#strings.isEmpty(msg)}">
+    <i class="close icon"></i>
+    <div class="header">提示：</div>
+    <p th:text="${msg}">恭喜，操作成功！</p>
+</div>
+
+<script>
+    window.alert(${msg});
+    $('.ui.form').form({
+
+        fields: {
+            dept_num: {
+                identifier: 'dept_num',
+                rules: [{
+                    type: 'empty',
+                    prompt: '请输入部门编号'
+                }]
+            },
+            duty: {
+                identifier: 'duty',
+                rules: [{
+                    type: 'empty',
+                    prompt: '请输入部门职责'
+                }]
+            }
+        }
+    });
+</script>
+
+</body>
+</html>

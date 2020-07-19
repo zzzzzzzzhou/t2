@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>update</title>
+</head>
+<body>
+<h1>update</h1>
+<form action="#" method="post" th:action="@{/dept/update/a}">
+   部门id： <input th:value="${dept.getDept_num()}" type="text" readonly="readonly" name="dept_num"><br><br>
+    部门名称：<input th:value="${dept.getDept_name()}" type="text"  name="dept_name"><br><br>
+   领导id： <input th:value="${dept.getLeader_id()}" type="text"  name="leader_id"><br><br>
+   部门职责： <input th:value="${dept.getDuty()}" type="text" name="duty"><br><br>
+    <input type="submit" value="提交">
+</form>
+<div class="ui success message" th:unless="${#strings.isEmpty(msg)}">
+    <i class="close icon"></i>
+    <div class="header">提示：</div>
+    <p th:text="${msg}">恭喜，操作成功！</p>
+</div>
+
+<script>
+    $('.ui.form').form({
+        fields: {
+            dept_num: {
+                identifier: 'dept_num',
+                rules: [{
+                    type: 'empty',
+                    prompt: '请输入部门编号'
+                }]
+            },
+            duty: {
+                identifier: 'duty',
+                rules: [{
+                    type: 'empty',
+                    prompt: '请输入部门职责'
+                }]
+            }
+        }
+    });
+</script>
+
+</body>
+</html>

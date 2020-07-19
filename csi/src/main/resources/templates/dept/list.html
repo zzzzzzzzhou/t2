@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>dept</title>
+</head>
+<body>
+<h1>deptlist</h1>
+<a href="#" th:href="@{/dept/add}">新增部门</a><br>
+<div class="ui success message" th:unless="${#strings.isEmpty(msg)}">
+    <i class="close icon"></i>
+    <div class="header">提示：</div>
+    <h3 th:text="${msg}">恭喜，操作成功！</h3>
+</div>
+<table>
+    <tr>
+        <th>部门ID</th>
+        <th>部门名称</th>
+        <th>领导ID</th>
+        <th>部门职责</th>
+        <th>修改</th>
+        <th>删除</th>
+    <tr th:each="dept : ${list}">
+        <td th:text="${dept.dept_num}"></td>
+        <td th:text="${dept.dept_name}"></td>&nbsp;&nbsp;
+        <td th:text="${dept.leader_id}"></td>&nbsp;&nbsp;
+        <td th:text="${dept.duty}"></td>&nbsp;&nbsp;
+        <th><a href="#" th:href="@{/dept/list/{dept_num}/update(dept_num=${dept.dept_num})}">修改</a>&nbsp;&nbsp;&nbsp;
+        </th>
+        <th><a href="#" th:href="@{/dept/list/{dept_num}/delete(dept_num=${dept.dept_num})}"
+               onclick="return confirm('确定要删除该文章吗？三思啊! 删了可就没了！')">删除</a>
+        </th>
+    </tr>
+</table>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+</body>
+</html>

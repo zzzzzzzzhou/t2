@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>List</title>
+</head>
+<body>
+<h1>ManageEmployee</h1>
+<h2>员工列表</h2>
+<a href="#" th:href="@{/ManageEmployee/add}">跳转到positionadd.html</a>
+<div class="ui success message" th:unless="${#strings.isEmpty(msg)}">
+    <i class="close icon"></i>
+    <div class="header">提示：</div>
+    <h3 th:text="${msg}">恭喜，操作成功！</h3>
+</div>
+<!--<div th:each="employee : ${list}">
+    <a th:text="${employee.Employee_id}"></a> &nbsp;&nbsp;&nbsp;&nbsp;
+    <a th:text="${employee.employeeloginname}"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a th:text="${employee.employeepassword}"></a>&nbsp;&nbsp;
+    <a th:text="${employee.dept_num}"></a>&nbsp;&nbsp;
+    <a th:text="${employee.employee_name}"></a>&nbsp;&nbsp;
+    <a th:text="${employee.sex}"></a>&nbsp;&nbsp;
+    <a th:text="${employee.hobby}"></a>&nbsp;&nbsp;
+    <a th:text="${employee.age}"></a>&nbsp;&nbsp;
+&lt;!&ndash;    <a href="#"  th:href="@{/position/list/{position_id}/update(position_id=${position.position_id})}" >修改</a>&nbsp;&nbsp;&ndash;&gt;
+&lt;!&ndash;    <a href="#"  th:href="@{/position/list/{position_id}/delete(position_id=${position.position_id})}" onclick="return confirm('确定要删除该文章吗？三思啊! 删了可就没了！')">删除</a>&ndash;&gt;
+</div>-->
+<h3>搜索</h3>
+<form action="#" method="post" th:action="@{/ManageEmployee/search}">
+    员工姓名：<input type="text" name="employee_name"><br><br>
+    部门ID：<input type="text" name="dept_num" value="0"><br><br>
+    <input type="submit" value="搜索">
+</form>
+<br><a th:href="@{/ManageEmployee}">查看所有员工</a>
+<h3>员工表</h3>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>登录名</th>
+        <th>登录密码</th>
+        <th>部门编号</th>
+        <th>员工名</th>
+        <th>性别</th>
+        <th>年龄</th>
+        <th>爱好</th>
+        <th>修改</th>
+        <th>删除</th>
+    <tbody>
+        <tr th:each="employee : ${list}">
+            <td th:text="${employee.Employee_id}">ID</td>
+             <td th:text="${employee.employeeloginname}">登录名</td>
+            <td th:text="${employee.employeepassword}">密码</td>
+            <td th:text="${employee.dept_num}">部门编号</td>
+            <td th:text="${employee.employee_name}">员工名</td>
+            <td th:text="${employee.sex}">性别</td>
+            <th th:text="${employee.age}">年龄</th>
+            <th th:text="${employee.hobby}">爱好</th>
+            <th><a href="#" th:href="@{/ManageEmployee/list/{Employee_id}/update(Employee_id=${employee.Employee_id})}">修改</a>&nbsp;&nbsp;</th>
+            <th><a href="#" th:href="@{/ManageEmployee/list/{Employee_id}/delete(Employee_id=${employee.Employee_id})}"
+                   onclick="return confirm('确定要删除该文章吗？三思啊! 删了可就没了！')">删除</a></th>
+        </tr>
+    </tbody>
+</table>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+</body>
+</html>

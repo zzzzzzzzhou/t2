@@ -1,0 +1,23 @@
+spring:
+  thymeleaf:
+    mode: HTML
+  profiles:
+    active: dev
+  messages:
+    basename: i18n/messages
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/csi?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+    username: root
+    password:
+
+logging:
+  level:
+    root: info
+    cn.yznu.blog: debug
+  file: log/csi-dev.log
+
+mybatis:
+  type-aliases-package: cn.yznu.csi.pojo
+  mapper-locations: classpath:mapper/*.xml
+

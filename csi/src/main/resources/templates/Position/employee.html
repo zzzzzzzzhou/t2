@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>登录名</th>
+        <th>登录密码</th>
+        <th>部门编号</th>
+        <th>员工名</th>
+        <th>性别</th>
+        <th>年龄</th>
+        <th>爱好</th>
+    <tr th:each="employee : ${list}">
+        <tdd th:text="${employee.Employee_id}">ID</tdd>
+        <td th:text="${employee.employeeloginname}">登录名</td>
+        <td th:text="${employee.employeepassword}">密码</td>
+        <td th:text="${employee.dept_num}">部门编号</td>
+        <td th:text="${employee.employee_name}">员工名</td>
+        <td th:text="${employee.sex}">性别</td>
+        <td th:text="${employee.age}">年龄</td>
+        <td th:text="${employee.hobby}">爱好</td>
+        <!--  <th><a href="#" th:href="@{/ManageEmployee/list/{Employee_id}/update(Employee_id=${employee.Employee_id})}">修改</a>&nbsp;&nbsp;</th>
+          <th><a href="#" th:href="@{/ManageEmployee/list/{Employee_id}/delete(Employee_id=${employee.Employee_id})}"
+                 onclick="return confirm('确定要删除该文章吗？三思啊! 删了可就没了！')">删除</a></th>-->
+    </tr>
+</table>
+</body>
+</html>

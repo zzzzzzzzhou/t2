@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>employee Update</title>
+</head>
+<body>
+<h1>Update</h1>
+<form action="#" method="post" th:action="@{/ManageEmployee/update/a}">
+    ID：<input th:value="${employee.getEmployee_id()}" type="text" name="Employee_id"  readonly="readonly"><br><br>
+    登录名：<input th:value="${employee.getEmployeeloginname()}" type="text" name="employeeloginname" ><br><br>
+    密码：<input th:value="${employee.getEmployeepassword()}" type="text" name="employeepassword" ><br><br>
+    部门编号：<input th:value="${employee.getDept_num()}" type="text" name="dept_num" ><br><br>
+    姓名：<input th:value="${employee.getEmployee_name()}" type="text" name="employee_name" ><br><br>
+    性别：<input th:value="${employee.getSex()}" type="text" name="sex" ><br><br>
+    爱好：<input th:value="${employee.getHobby()}" type="text" name="hobby" ><br><br>
+    年龄：<input th:value="${employee.getAge()}" type="text" name="age" ><br><br>
+    <input type="submit" value="提交">
+</form>
+
+<div class="ui success message" th:unless="${#strings.isEmpty(msg)}">
+    <i class="close icon"></i>
+    <div class="header">提示：</div>
+    <p th:text="${msg}">恭喜，操作成功！</p>
+</div>
+
+
+</body>
+</html>

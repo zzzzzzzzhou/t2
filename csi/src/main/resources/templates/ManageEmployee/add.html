@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>employeeadd</title>
+</head>
+<body>
+<h1>add</h1>
+<form action="#" method="post" th:action="@{/ManageEmployee/add/a}">
+    登录名：<input type="text" name="employeeloginname" placeholder="登录名"><br><br>
+    密码：<input type="text" name="employeepassword" placeholder="密码"><br><br>
+    部门编号：<input type="text" name="dept_num" placeholder="部门编号"><br><br>
+    姓名：<input type="text" name="employee_name" placeholder="姓名"><br><br>
+    性别：<input type="text" name="sex" placeholder="性别"><br><br>
+    爱好：<input type="text" name="hobby" placeholder="爱好"><br><br>
+    年龄：<input type="text" name="age" placeholder="年龄"><br><br>
+    <input type="submit" value="提交">
+</form>
+
+<div class="ui success message" th:unless="${#strings.isEmpty(msg)}">
+    <i class="close icon"></i>
+    <div class="header">提示：</div>
+    <p th:text="${msg}">恭喜，操作成功！</p>
+</div>
+
+
+</body>
+</html>
